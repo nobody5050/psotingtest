@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>chat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.3.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.3.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.3.0/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/5.3.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.3.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <style>
+
+      @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+      #killmeplsmsg {
+        overflow-wrap: normal;
+      }
+    .msgcontainer {
+      
+      overflow-y: scroll;
+      overflow-wrap: normal;
+      width: 100%;
+      height: 40em;
+      line-height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fcf7f7;
+    }
+    .message {
+      color: #8ac926;
+      font-size: 35px;
+      line-height: 1px;
+    }
+    .sender {
+      color: #9fc95c;
+      font-size: 27px;
+      text-align: right;
+      word-spacing: 10px;
+    }
+    .input {
+      margin-top: 20px;
+      display: inline-block;
+      width: 90%;
+      font-size: 35px;
+    }
+    button {
+      line-height: 40px;
+      background-color: #6a4c93;
+      border:none;
+      outline: none;
+      font-size: 30px;
+      width: 49.7%;
+      }
+    .allthesinglebuttons {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+    .onesinglemessage {
+      width: 100%;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      background-color: #e8e3e3;
+    }
+    .functionalpart {
+      font-family: "Source Sans Pro";
+      width: 50%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .sendbutton {
+      display: inline-block;
+      vertical-align: bottom;
+      width: 6%;
+      padding-left: 10px;
+    }
+    .maininputthing {
+      width: 100%;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <script src="app.js"></script>
+  <div class="functionalpart">
+    <div class="allthesinglebuttons">
+        <button  onclick="googleLogin()">Sign in with google</button>
+        <button onclick="anonymousLogin()">sign in anonymously</button>
+    </div>
+    
+        <div class="msgcontainer" id="only">
+        </div>
+    <div class="maininputthing">
+        <input class="input" id="inputthingie" >
+        <img class="sendbutton" src="send.png" id="sendbuttonthingie" onclick="newPost()"/>
+        
+    </div>
+    
+      </div>
+  </body>
+
+</html>

@@ -1,0 +1,54 @@
+[debug] [2018-07-26T16:21:16.503Z] ----------------------------------------------------------------------
+[debug] [2018-07-26T16:21:16.506Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-07-26T16:21:16.506Z] CLI Version:   3.19.3
+[debug] [2018-07-26T16:21:16.507Z] Platform:      linux
+[debug] [2018-07-26T16:21:16.507Z] Node Version:  v8.11.3
+[debug] [2018-07-26T16:21:16.507Z] Time:          Thu Jul 26 2018 18:21:16 GMT+0200 (CEST)
+[debug] [2018-07-26T16:21:16.507Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-26T16:21:16.518Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-26T16:21:16.518Z] > authorizing via signed-in user
+[debug] [2018-07-26T16:21:16.521Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/psotingtest  
+  
+ Thu Jul 26 2018 18:21:16 GMT+0200 (CEST)
+[debug] [2018-07-26T16:21:31.059Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-26T16:21:31.060Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/psotingtest/tokens  
+  
+ Thu Jul 26 2018 18:21:31 GMT+0200 (CEST)
+[debug] [2018-07-26T16:22:01.129Z] Error: getaddrinfo ENOTFOUND admin.firebase.com admin.firebase.com:443
+    at errnoException (dns.js:50:10)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND admin.firebase.com admin.firebase.com:443
+[debug] [2018-07-26T16:27:08.050Z] ----------------------------------------------------------------------
+[debug] [2018-07-26T16:27:08.053Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-07-26T16:27:08.053Z] CLI Version:   3.19.3
+[debug] [2018-07-26T16:27:08.053Z] Platform:      linux
+[debug] [2018-07-26T16:27:08.053Z] Node Version:  v8.11.3
+[debug] [2018-07-26T16:27:08.053Z] Time:          Thu Jul 26 2018 18:27:08 GMT+0200 (CEST)
+[debug] [2018-07-26T16:27:08.053Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-26T16:27:08.064Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-26T16:27:08.065Z] > authorizing via signed-in user
+[debug] [2018-07-26T16:27:08.068Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/psotingtest  
+  
+ Thu Jul 26 2018 18:27:08 GMT+0200 (CEST)
+[debug] [2018-07-26T16:27:26.235Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-26T16:27:26.236Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/psotingtest/tokens  
+  
+ Thu Jul 26 2018 18:27:26 GMT+0200 (CEST)
+[debug] [2018-07-26T16:27:28.277Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-26T16:27:28.278Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/psotingtest  
+  
+ Thu Jul 26 2018 18:27:28 GMT+0200 (CEST)
+[debug] [2018-07-26T16:27:32.711Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/yoris/posting2'...
+[info] 
+[debug] [2018-07-26T16:27:32.715Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/851536149068/clients/_:getWebAppConfig  
+  
+ Thu Jul 26 2018 18:27:32 GMT+0200 (CEST)
+[debug] [2018-07-26T16:27:37.025Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
